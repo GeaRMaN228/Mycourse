@@ -7,7 +7,6 @@ using Microsoft.Data.Sqlite;
 
 public class DBManager {
     private SqliteConnection? connection = null;
-    private readonly Dictionary<string, int> _activeTokens = new();
 
     private string HashPassword(string password) {
         using (var algorithm = SHA256.Create()) {
@@ -394,4 +393,5 @@ public class DBManager {
             return false;
         }
     }
+
 }
