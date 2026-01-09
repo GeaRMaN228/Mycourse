@@ -40,7 +40,7 @@ internal class Program
 
 public static class Requests
 {
-    static Answer_Request req = new Answer_Request();
+    private static Answer_Request req = new Answer_Request();
 
     private static string Login(HttpClient client, int count = 0)
     {
@@ -474,4 +474,5 @@ public class Answer_Request
         };
         return answer;
     }
+
 }
