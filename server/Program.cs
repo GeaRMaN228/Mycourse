@@ -317,7 +317,7 @@ public class AuthOptions
 {
     public const string ISSUER = "GronsfeldServer";
     public const string AUDIENCE = "GronsfeldClient";
-    const string KEY = "pomidorki_ya_lybly.fuck_ni99ers!!";
+    private const string KEY = "pomidorki_ya_lybly.fuck_ni99ers!!";
     public static SymmetricSecurityKey GetSymmetricSecurityKey() =>
         new SymmetricSecurityKey(Encoding.UTF8.GetBytes(KEY));
 }
@@ -452,4 +452,5 @@ public class GronsfeldCipher
         
         return true;
     }
+
 }
